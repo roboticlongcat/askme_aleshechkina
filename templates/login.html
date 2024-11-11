@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AskPupkin</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <style>
+        .col {
+            float: right;
+            width: 220px;
+        }
+        .question-item {
+            margin-bottom: 20px;
+        }
+        .question-item p {
+            margin-right: 95px;
+            font-weight: bold;
+            width: 100px;
+        }
+        .row {
+            float: left;
+            width: 400px;
+        }
+        .text {
+            color: red;
+        }
+        .form-controll {
+            height: 30px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">AskPupkin</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Ask</button>
+                </form>
+
+                <div class="d-flex gap-1">
+                    <div>
+                        <a href="#">settings</a>
+                        <a href="#">log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+    <h2>New question</h2>
+    <div class="col-15">
+        <div class="question-item d-flex align-items-center">
+            <p class="card-title me-3">login</p>
+            <textarea class="form-controll" placeholder="pupkin"></textarea>
+        </div>
+        <div class="question-item d-flex align-items-center">
+            <p class="card-title me-3">password</p>
+            <textarea class="form-controll" placeholder="no"></textarea>
+        </div>
+        <p class="text"> Wrong login or password!</p>
+        <button class="btn btn-dark">LOGIN!</button>
+        <p class="text"> </p><a href="#">create new account</a> </p>
+    </div>
+    </div>
+        <div class="col">
+                <section class="mb-3 gap-1">
+                    <h2>Popular Tags</h2>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="text-primary">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-primary-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-secondary">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-secondary-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-success">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-success-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-danger">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-danger-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-warning-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-info-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-light-emphasis">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-dark bg-white">.text</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p class="text-dark-emphasis">.text</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Best members</h2>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                        </ul>
+                    </div>
+                </section>
+        </div>
+    </div>
+</div>
+<script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>
