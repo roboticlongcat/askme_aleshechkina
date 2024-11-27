@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AskPupkin</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <style>
+        .h2 {
+            margin-top: 20px;
+        }
+        .col {
+            margin-bottom: 30px;
+            margin-top: 20px;
+            width: 250px;
+        }
+        .question-item {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .question-item p {
+            margin-right: 95px;
+            font-weight: bold;
+            width: 100px;
+        }
+        .text {
+            color: red;
+        }
+        .list-group-item {
+            width: 200px;
+        }
+        .form-control {
+            width: 300px;
+        }
+        .center {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">AskPupkin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Ask</button>
+                </form>
+                <div class="d-flex gap-1">
+                    <div>
+                        <a href="#">settings</a>
+                        <a href="#">log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-3">
+        <div class="row">
+            <div class="center">
+                <h2>Register</h2>
+                <div class="question-item d-flex align-items-center">
+                    <p class="card-title me-4">login</p>
+                    <input class="form-control me-2" type="search" placeholder="Pupkin" aria-label="Search">
+                </div>
+                <div class="question-item d-flex align-items-center">
+                    <p class="card-title me-4">email</p>
+                    <input class="form-control me-2" type="search" placeholder="pupkin@mail.ru" aria-label="Search">
+                </div>
+                <div class="question-item d-flex align-items-center">
+                    <p class="card-title me-4">nickname</p>
+                    <input class="form-control me-2" type="search" placeholder="pupa" aria-label="Search">
+                </div>
+                <div class="question-item d-flex align-items-center">
+                    <p class="card-title me-4">password</p>
+                    <input class="form-control me-2" type="search" placeholder="no" aria-label="Search">
+                </div>
+                <div class="question-item d-flex align-items-center">
+                    <p class="card-title me-4">repeat password</p>
+                    <input class="form-control me-1" type="search" placeholder="no" aria-label="Search">
+                </div>
+                <div class="question-item d-flex align-items-center">
+                    <p class="card-title me-5">upload avatar</p>
+                    <input class="form-control me-2" type="file" placeholder="c:\ava.jpg">
+                    <button class="btn btn-dark">Upload!</button>
+                </div>
+                <p class="text"> Passwords don't match!</p>
+                <button class="btn btn-dark">Register!</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <section class="gap-2 sm-3">
+                    <h2>Popular Tags</h2>
+                    <div class="col sm-2">
+                        <a class="text-primary">.text</a>
+                        <a class="text-primary-emphasis">.text</a>
+                        <a class="text-secondary">.text</a>
+                        <a class="text-secondary-emphasis">.text</a>
+                        <a class="text-success">.text</a>
+                        <a class="text-success-emphasis">.text</a>
+                        <a class="text-danger">.text</a>
+                        <a class="text-danger-emphasis">.text</a>
+                        <a class="text-warning-emphasis">.text</a>
+                        <a class="text-info-emphasis">.text</a>
+                        <a class="text-light-emphasis">.text</a>
+                        <a class="text-dark bg-white">.text</a>
+                        <a class="text-dark-emphasis">.text</a>
+                    </div>
+                    <h2>Best members</h2>
+                    <ul class="list-group list-group-flush gap-1">
+                        <li class="list-group-item"><a href="#">Member</a></li>
+                        <li class="list-group-item"><a href="#">Member</a></li>
+                        <li class="list-group-item"><a href="#">Member</a></li>
+                        <li class="list-group-item"><a href="#">Member</a></li>
+                        <li class="list-group-item"><a href="#">Member</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="container mt-3">
+        <ul class="list-inline">
+            <li class="list-inline-item"><h1>Hot Questions</h1></li>
+            <li class="list-inline-item"><a href="{% url 'index' %}">All questions</a></li>
+        </ul>
+    <div class="row">
+            <div class="col-9">
+                {% for question in questions %}
+                    <article class="d-flex flex-column gap-3">
+                        <div class="card w-100" style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="border mb-5" style="width: 50px">
+                                            <img src="jpg.jpg" alt="Avatar" class="img-fluid">
+                                        </div>
+                                        <input class="form-control" type="number" value="5" placeholder="Default input"
+                                            aria-label="default input example">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="card-title">{{ question.title }}</h5>
+                                        <p class="card-text">{{ question.text }}</p>
+                                        <div class="d-flex gap-5">
+                                            <a href="#" class="card-link">Answer (3)</a>
+                                            <div>
+                                                Tags:
+                                                <a href="#" class="card-link">Another link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#"><</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+            </nav>
+            </div>
+    </div>
+</main>
+{% endblock %}
